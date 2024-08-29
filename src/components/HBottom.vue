@@ -7,9 +7,7 @@ import HBottomMiniCtn from "@/components/HBottomMiniCtn.vue";
     background-color:#edf2fb;
     padding:4vh 6vw;
 }
-.mini-ctn{
-    
-}
+
 h2{
     text-align:center;
     color: #14213d;
