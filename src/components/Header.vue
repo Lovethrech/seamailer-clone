@@ -4,19 +4,22 @@ import Nav from "@/components/Nav.vue";
 </script>
 
 <style scoped>
-.ctn{
+.top-ctn{
+    background-color:rgb(245, 245, 245);
     padding: 1vh 2vw;
+    border-bottom: 6px outset rgba(255, 255, 255, 0.151);
 }
 .main-ctn{
     display:flex;
+    justify-content: space-between;
 }
 </style>
 
 <template>
-    <div class="ctn">
+    <div class="top-ctn">
         <div class="main-ctn">
-            <Logo/>
-            <Nav/>
+            <Logo></Logo>
+            <Nav></Nav>
         </div>
     </div>
 </template>

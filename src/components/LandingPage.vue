@@ -4,6 +4,6 @@ import Header from "@/components/Header.vue";
 
 <template>
     <div class="ctn">
-        <Header/>
+        <Header></Header>
     </div>
 </template>

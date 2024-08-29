@@ -2,6 +2,12 @@
 .ctn, .ctn img{
     width:150px;
 }
+.ctn{
+    margin:auto 0;
+}
+.ctn:hover{
+    cursor:pointer;
+}
 </style>
 
 <template>
