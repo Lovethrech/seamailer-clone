@@ -15,6 +15,11 @@ const signUpId = ref([navLists[1]]);
     display: flex;
     gap:10px;
 }
+@media screen and (max-width:875px){
+    .main-ctn{
+        display:none;
+    }
+}
 </style>
 
 <template>
