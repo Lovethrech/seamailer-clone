@@ -5,6 +5,7 @@ import Nav from "@/components/Nav.vue";
 
 <style scoped>
 .top-ctn{
+    position: sticky;
     background-color:rgb(245, 245, 245);
     padding: 1vh 6vw 0;
     border-bottom: 6px outset rgba(255, 255, 255, 0.151);
