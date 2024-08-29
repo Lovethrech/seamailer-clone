@@ -5,11 +5,16 @@ import HBottomMiniCtn from "@/components/HBottomMiniCtn.vue";
 <style scoped>
 .main-ctn{
     background-color:#edf2fb;
-    padding:2vh 6vw;
+    padding:4vh 6vw;
 }
 .mini-ctn{
-    display:center;
-    justify-content: center;
+    
+}
+h2{
+    text-align:center;
+    color: #14213d;
+    font-size:30px;
+    font-weight:600;
 }
 </style>
 
