@@ -1,6 +1,6 @@
 <style scoped>
 .ctn, .ctn img{
-    width:150px;
+    width:120px;
 }
 .ctn{
     margin:auto 0;

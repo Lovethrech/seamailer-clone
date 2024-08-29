@@ -22,7 +22,6 @@ button{
     cursor:pointer;
     transform: scale(0.92);
     transition: all .8s;
-
 }
 </style>
 

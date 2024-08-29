@@ -7,10 +7,7 @@ import HeroImg from "@/components/HeroImg.vue";
 .top-ctn{
     display:flex;
     justify-content:center;
-    padding: 8vh 4vw;
-}
-.main-ctn{
-
+    padding: 8vw 6vw 4vw;
 }
 </style>
 

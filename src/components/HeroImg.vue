@@ -17,7 +17,13 @@
     width:40vw;
 }
 @media screen and (max-width:875px) {
-    
+    .main-ctn{
+        width:80vw;
+        height:50vw;
+    }
+    .ctn img{
+        width:70vw;
+    }
 }
 </style>
 
