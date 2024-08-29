@@ -1,10 +1,12 @@
 [
     {
         "id":"1",
-        "name": "login"
+        "name": "login",
+        "link":"#"
     },
     {
         "id":"2",
-        "name": "sign up"
+        "name": "sign up",
+        "link":"#"
     }
 ]

@@ -1,5 +1,7 @@
 <script setup>
-import 
+import { defineProps, ref } from "vue";
+
+
 </script>
 
 <template>
