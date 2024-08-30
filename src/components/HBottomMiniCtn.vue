@@ -54,9 +54,6 @@ window.addEventListener('resize', () => {
     windowWidth.value = window.innerWidth;
     updateStyles();
 })
-
-
-
 </script>
 
 <style scoped>
