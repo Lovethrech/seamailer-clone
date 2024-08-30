@@ -9,6 +9,7 @@ import GSMiniCtn from "@/components/GSMiniCtn.vue";
 h2, p{
     text-align:center;
     color:#14213d;
+    line-height:1.5;
 }
 h2{
     font-size:30px;
