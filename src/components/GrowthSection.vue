@@ -4,7 +4,7 @@ import GSMiniCtn from "@/components/GSMiniCtn.vue";
 
 <style scoped>
 .main-ctn{
-    padding:5vh 6vw;
+    padding:8vh 6vw 4vh;
 }
 h2, p{
     text-align:center;

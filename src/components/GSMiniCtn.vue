@@ -17,12 +17,13 @@ console.log(btnDescInfo);
     flex-direction:row;
     justify-content: center;
     gap:2vw;
-    margin:8vh 0;
+    margin:0vh 0;
     padding:4vh 4vw;
     border:3px outset rgba(0, 0, 0, 0.064);
 }
 .card:nth-child(2){
     flex-direction:row-reverse;
+    margin: 8vh 0;
 }
 .img-ctn, .img-ctn img{
     border-radius:20px;
@@ -48,6 +49,27 @@ console.log(btnDescInfo);
 }
 .btn-ctn{
     width:130px;
+}
+
+@media screen and (max-width:780px) {
+    .card, .card:nth-child(2){
+        justify-content: center;
+        place-items:center;
+    }
+    .card{
+        flex-direction:column;
+    }
+    .card:nth-child(2){
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:600px) {
+    .img-ctn, .desc{
+        width:100%;
+    }
+    .desc{
+        text-align:justify;
+    }
 }
 </style>
 
