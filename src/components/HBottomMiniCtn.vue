@@ -7,7 +7,7 @@ import converts from "@/data/converts.json";
     display:flex;
     justify-content:center;
     gap:2vw;
-    margin:8vh 0 3vh;
+    margin:4vh 0 3vh;
 }
 .card{
     width:350px;
@@ -22,7 +22,10 @@ import converts from "@/data/converts.json";
     transition: all 1s;
 }
 .card:nth-child(2){
-    margin:-4vh 0 4vh;
+    margin-bottom: 9vh;
+}
+.card:nth-child(1), .card:nth-child(3){
+    margin:4vh 0 6vh;
 }
 .title{
     color: #14213d;
@@ -66,6 +69,9 @@ import converts from "@/data/converts.json";
         transform: scale(1);
     }
     .card:nth-child(2){
+        margin-bottom: 0;
+    }
+    .card:nth-child(1), .card:nth-child(3){
         margin:0;
     }
 }

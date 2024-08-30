@@ -5,7 +5,7 @@ import HBottomMiniCtn from "@/components/HBottomMiniCtn.vue";
 <style scoped>
 .main-ctn{
     background-color:#edf2fb;
-    padding:4vh 6vw;
+    padding:4vh 6vw 0;
 }
 h2{
     text-align:center;
@@ -14,6 +14,9 @@ h2{
     font-weight:600;
 }
 @media screen and (max-width:875px) {
+    .main-ctn{
+        padding:4vh 8vw;
+    }
     h2{
         font-size:26px;
     }
