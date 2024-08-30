@@ -2,6 +2,7 @@
 import Header from "@/components/Header.vue";
 import Hero from "@/components/Hero.vue";
 import HBottom from "@/components/HBottom.vue";
+import GrowthSection from "@/components/GrowthSection.vue";
 </script>
 
 <template>
@@ -9,5 +10,6 @@ import HBottom from "@/components/HBottom.vue";
         <Header></Header>
         <Hero></Hero>
         <HBottom></HBottom>
+        <GrowthSection></GrowthSection>
     </div>
 </template>

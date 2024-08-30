@@ -1,0 +1,27 @@
+[
+    {
+        "id":"1",
+        "img":"",
+        "title":"",
+        "desc":"",
+        "btn":"<BlueBtn :btnData='btnDescInfo'></BlueBtn>",
+        "name":"Get Started"
+    },
+    {
+        "id":"2",
+        "img":"",
+        "img-alt":"",
+        "title":"",
+        "desc":"",
+        "btn":"<OrangeBtn :btnData='btnDescInfo'></OrangeBtn>", 
+        "name":"Get Started"
+    },
+    {
+        "id":"3",
+        "img":"",
+        "title":"startups & developers",
+        "desc":"Send volume of emails with freedom from your application with our easy to use APIs and SDKs.",
+        "btn":"<BlueBtn :btnData='btnDescInfo'></BlueBtn>",
+        "name":"Get Started"
+    }
+]
