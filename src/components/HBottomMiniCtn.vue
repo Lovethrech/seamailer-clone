@@ -1,5 +1,62 @@
 <script setup>
+import { ref } from "vue";
 import converts from "@/data/converts.json";
+
+// Getting a timed-slider
+const scrollOneColor = ref("hsl(0, 0%, 100%)");
+const scrollTwoColor = ref("transparent");
+const scrollThreeColor = ref("transparent");
+const windowWidth = ref(window.innerWidth);
+const slideOneStyleMargin = ref('4vh 0 4vh');
+const slideTwoStyleMargin = ref('2vh 0 4vh');
+const slideThreeStyleMargin = ref('4vh 0 4vh');
+let attributeIndex = 0;
+const attributes = [
+    { scrollOneColor: "hsl(0, 0%, 100%)", scrollTwoColor: "transparent", scrollThreeColor: "transparent" },
+    { scrollOneColor: "transparent", scrollTwoColor: "hsl(0, 0%, 100%)", scrollThreeColor: "transparent" },
+    { scrollOneColor: "transparent", scrollTwoColor: "transparent", scrollThreeColor: "hsl(0, 0%, 100%)" },
+];
+
+function updateStyles() {
+    if (windowWidth.value > 875) {
+        slideOneStyleMargin.value = '4vh 0 4vh';
+        slideTwoStyleMargin.value = '2vh 0 4vh';
+        slideThreeStyleMargin.value = '4vh 0 4vh';
+    }
+    else {
+        setInterval(() => {
+            attributeIndex = (attributeIndex + 1) % attributes.length;
+            const currentAttribute = attributes[attributeIndex];
+            scrollOneColor.value = currentAttribute.scrollOneColor;
+            scrollTwoColor.value = currentAttribute.scrollTwoColor;
+            scrollThreeColor.value = currentAttribute.scrollThreeColor;
+
+            if (scrollTwoColor.value === "hsl(0, 0%, 100%)") {
+                scrollTwoColor.value = "hsl(0, 0%, 100%)"
+                slideOneStyleMargin.value = '0 0 0 -330px';
+                slideTwoStyleMargin.value = '0';
+                slideThreeStyleMargin.value = '0';
+            }
+            else if (scrollThreeColor.value === "hsl(0, 0%, 100%)") {
+                slideOneStyleMargin.value = '0 0 0 -700px';
+                slideTwoStyleMargin.value = '0';
+                slideThreeStyleMargin.value = '0';
+            }
+            else {
+                slideOneStyleMargin.value = '0 0 0 8vw';
+                slideTwoStyleMargin.value = '0';
+                slideThreeStyleMargin.value = '0';
+            }
+        },5000); 
+    }
+}
+window.addEventListener('resize', () => {
+    windowWidth.value = window.innerWidth;
+    updateStyles();
+})
+
+
+
 </script>
 
 <style scoped>
@@ -21,13 +78,6 @@ import converts from "@/data/converts.json";
     transform: scale(1.05);
     transition: all 1s;
 }
-.card:nth-child(2){
-    margin-top:2vh;
-    margin-bottom: 9vh;
-}
-.card:nth-child(1), .card:nth-child(3){
-    margin:4vh 0 6vh;
-}
 .title{
     color: #14213d;
     margin-top:2vh;
@@ -47,15 +97,15 @@ import converts from "@/data/converts.json";
     border-radius:40px;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.219);
 }
-.slide{
-    background-color: rgb(255, 255, 255);
-    width:33.3%;
+.scroll-one, .scroll-two, .scroll-three{
+    width:33%;
     height:100%;
     border-radius: 40px;
 }
 @media screen and (max-width:875px) {
     .slide-ctn{
         display:flex;
+        justify-content: space-between;
     }
     .ctn{
         margin:3vh 0;
@@ -65,28 +115,36 @@ import converts from "@/data/converts.json";
     }
     .card{
         width: 70vw;
+        transition: all 1s;
     }
     .card:hover{
         transform: scale(1);
-    }
-    .card:nth-child(2){
-        margin-bottom: 0;
-    }
-    .card:nth-child(1), .card:nth-child(3){
-        margin:0;
     }
 }
 </style>
 
 <template>
     <div class="ctn">
-        <div class="card" v-for="convert in converts" :key="convert.id">
-            <p class="title">{{convert.title}}</p>
+        <div class="card" :style="{margin: slideOneStyleMargin}">
+            <p class="title">{{converts[0].title}}</p>
             <br>
-            <p class="paragraph">{{convert.paragraph}}</p>
+            <p class="paragraph">{{converts[0].paragraph}}</p>
         </div>
+        <div class="card" :style="{margin: slideTwoStyleMargin}">
+            <p class="title">{{converts[1].title}}</p>
+            <br>
+            <p class="paragraph">{{converts[1].paragraph}}</p>
+        </div>
+        <div class="card" :style="{margin: slideThreeStyleMargin}">
+            <p class="title">{{converts[2].title}}</p>
+            <br>
+            <p class="paragraph">{{converts[2].paragraph}}</p>
+        </div>
+
     </div>
     <div class="slide-ctn">
-        <div class="slide"></div>
+        <div :style="{ backgroundColor: scrollOneColor }" class="scroll-one"></div>
+        <div :style="{ backgroundColor: scrollTwoColor }" class="scroll-two"></div>
+        <div :style="{ backgroundColor: scrollThreeColor }" class="scroll-three"></div>
     </div>
 </template>

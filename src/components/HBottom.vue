@@ -15,7 +15,7 @@ h2{
 }
 @media screen and (max-width:875px) {
     .main-ctn{
-        padding:4vh 8vw;
+        padding:4vh 0;
     }
     h2{
         font-size:26px;
