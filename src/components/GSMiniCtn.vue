@@ -10,24 +10,27 @@ console.log(btnDescInfo);
 
 <style scoped>
 .mini-ctn{
-    margin:0 14vw;
 }
 .card{
+    background-color:white;
     display:flex;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: center;
     gap:2vw;
-    margin:6vh 0;
+    margin:8vh 0;
+    padding:4vh 4vw;
+    border:3px outset rgba(0, 0, 0, 0.064);
 }
 .card:nth-child(2){
-    margin:10vh 0;
     flex-direction:row-reverse;
 }
 .img-ctn, .img-ctn img{
     border-radius:20px;
 }
 .img-ctn{
-    width:300px;
+    width:400px;
+    display:flex;
+    justify-content: right;
 }
 .img-ctn img {
     width: 100%;
@@ -40,6 +43,8 @@ console.log(btnDescInfo);
 }
 .desc{
     color:#14213d;
+    width:400px;
+    line-height: 1.5;
 }
 .btn-ctn{
     width:130px;
