@@ -13,7 +13,7 @@ p{
 }
 @media screen and (max-width:875px) {
     h1{
-        font-size: 28px;
+        font-size: 34px;
     }
     p{
         font-size: 14px;
