@@ -21,6 +21,10 @@ console.log(btnDescInfo);
     padding:4vh 4vw;
     border:3px outset rgba(0, 0, 0, 0.064);
 }
+.card:hover{
+    transform:scale(0.98);
+    transition: all .8s;
+}
 .card:nth-child(2){
     flex-direction:row-reverse;
     margin: 8vh 0;
