@@ -8,6 +8,10 @@ import GSMiniCtn from "@/components/GSMiniCtn.vue";
 }
 h2, p{
     text-align:center;
+    color:#14213d;
+}
+h2{
+    font-size:30px;
 }
 </style>
 
@@ -17,6 +21,7 @@ h2, p{
             <h2>
                 Made for your growth
             </h2>
+            <br>
             <p>
                 We have built and tailored Seamailer for your work to achieve more when talking to your customers
             </p>

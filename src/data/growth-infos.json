@@ -1,27 +1,26 @@
 [
     {
         "id":"1",
-        "img":"",
-        "title":"",
-        "desc":"",
-        "btn":"<BlueBtn :btnData='btnDescInfo'></BlueBtn>",
+        "img":"/clark-small.jpg",
+        "img-alt":"Business owners",
+        "title":"small business owners",
+        "desc":"A cost-effective way to engage with customers, drive sales, and build lasting relationships and repeat sales.",
         "name":"Get Started"
     },
     {
         "id":"2",
-        "img":"",
-        "img-alt":"",
-        "title":"",
-        "desc":"",
-        "btn":"<OrangeBtn :btnData='btnDescInfo'></OrangeBtn>", 
+        "img":"/kan-small.jpg",
+        "img-alt":"freelancers",
+        "title":"freelancers & content",
+        "desc":"Directly engage with your audience, nurture relationships, and monetize your expertise through targeted campaigns.",
         "name":"Get Started"
     },
     {
         "id":"3",
-        "img":"",
+        "img":"/blake-small.jpg",
+        "img-alt":"start-ups",
         "title":"startups & developers",
         "desc":"Send volume of emails with freedom from your application with our easy to use APIs and SDKs.",
-        "btn":"<BlueBtn :btnData='btnDescInfo'></BlueBtn>",
         "name":"Get Started"
     }
 ]

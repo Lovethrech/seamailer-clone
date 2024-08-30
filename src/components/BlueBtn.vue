@@ -7,11 +7,13 @@ const { btnData } = defineProps(['btnData']);
 <style scoped>
 .ctn, button{
     border-radius:10px;
+    border: 0;
 }
 .ctn{
     box-shadow:inset 0px 0px 6px 8px black;
 }
 button{
+    width: 100%;
     background-color: #14213d;
     color:white;
     padding:10px 15px;

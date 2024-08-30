@@ -8,20 +8,19 @@ const { btnData } = defineProps(['btnData']);
 .ctn,
 button {
     border-radius: 10px;
+    border:0;
 }
-
 .ctn {
     box-shadow: inset 0px 0px 6px 8px black;
 }
-
 button {
+    width: 100%;
     background-color: #f1914f;
     color: white;
     padding: 10px 15px;
     text-transform: capitalize;
     font-weight: 600;
 }
-
 .ctn:hover {
     cursor: pointer;
     transform: scale(0.92);

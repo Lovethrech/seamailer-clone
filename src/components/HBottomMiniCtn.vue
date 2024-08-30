@@ -18,10 +18,11 @@ import converts from "@/data/converts.json";
     box-shadow: inset 0px 0px 8px 8px #14213d21;
 }
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 1s;
 }
 .card:nth-child(2){
+    margin-top:2vh;
     margin-bottom: 9vh;
 }
 .card:nth-child(1), .card:nth-child(3){
