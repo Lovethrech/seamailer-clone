@@ -10,12 +10,6 @@ const windowWidth = ref(window.innerWidth);
 const slideOneStyleMargin = ref('4vh 0 4vh');
 const slideTwoStyleMargin = ref('2vh 0 4vh');
 const slideThreeStyleMargin = ref('4vh 0 4vh');
-let attributeIndex = 0;
-const attributes = [
-    { scrollOneColor: "hsl(0, 0%, 100%)", scrollTwoColor: "transparent", scrollThreeColor: "transparent" },
-    { scrollOneColor: "transparent", scrollTwoColor: "hsl(0, 0%, 100%)", scrollThreeColor: "transparent" },
-    { scrollOneColor: "transparent", scrollTwoColor: "transparent", scrollThreeColor: "hsl(0, 0%, 100%)" },
-];
 
 function updateStyles() {
     if (windowWidth.value < 875) {
@@ -25,17 +19,11 @@ function updateStyles() {
     }
     else {
         setInterval(() => {
-            attributeIndex = (attributeIndex + 1) % attributes.length;
-            const currentAttribute = attributes[attributeIndex];
-            scrollOneColor.value = currentAttribute.scrollOneColor;
-            scrollTwoColor.value = currentAttribute.scrollTwoColor;
-            scrollThreeColor.value = currentAttribute.scrollThreeColor;
-
             if (scrollOneColor.value === "hsl(0,0%,100%)") {
                 scrollOneColor.value = "transparent";
                 scrollTwoColor.value = "hsl(0, 0%, 100%)";
                 scrollThreeColor.value = "transparent";
-                slideOneStyleMargin.value = '0 0 0 -80vw';
+                slideOneStyleMargin.value = '0 0 0 -8vw';
                 slideTwoStyleMargin.value = '0';
                 slideThreeStyleMargin.value = '0';
             }
@@ -54,10 +42,10 @@ function updateStyles() {
     }
 }
 
-// window.addEventListener('resize', () => {
-//     windowWidth.value = window.innerWidth;
-//     updateStyles();
-// })
+window.addEventListener('resize', () => {
+    windowWidth.value = window.innerWidth;
+    updateStyles();
+})
 </script>
 
 <style scoped>
