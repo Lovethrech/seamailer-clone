@@ -19,7 +19,7 @@ const attributes = [
 
 function updateStyles() {
     if (windowWidth.value < 875) {
-        slideOneStyleMargin.value = '0 0 0 8vw';
+        slideOneStyleMargin.value = '0 0 0 12vw';
         slideTwoStyleMargin.value = '0';
         slideThreeStyleMargin.value = '0';
     }
@@ -33,27 +33,32 @@ window.addEventListener('resize', () => {
     windowWidth.value = window.innerWidth;
     updateStyles()
 })
-setInterval(() => {
-    attributeIndex = (attributeIndex + 1) % attributes.length;
-    const currentAttribute = attributes[attributeIndex];
-    scrollOneColor.value = currentAttribute.scrollOneColor;
-    scrollTwoColor.value = currentAttribute.scrollTwoColor;
-    scrollThreeColor.value = currentAttribute.scrollThreeColor;
+if (windowWidth.value < 875) {
+    setInterval(() => {
+        attributeIndex = (attributeIndex + 1) % attributes.length;
+        const currentAttribute = attributes[attributeIndex];
+        scrollOneColor.value = currentAttribute.scrollOneColor;
+        scrollTwoColor.value = currentAttribute.scrollTwoColor;
+        scrollThreeColor.value = currentAttribute.scrollThreeColor;
 
-    if (scrollTwoColor.value === "hsl(0, 0%, 100%)") {
-        slideOneStyleMargin.value = '0 0 0 1300pxw';
-        slideTwoStyleMargin.value = '0';
-        slideThreeStyleMargin.value = '0';
-        updateStyles();
-    }
-    // else if (scrollThreeColor.value == "hsl(0, 0%, 100%)") {
-    //     imageBg.value = "url(/psk-large.jpg) center/100% auto no-repeat";
-    //     updateStyles()
-    // }
-    // else {
-    //     imageBg.value = "url(/toa-large.jpg) center/100% auto no-repeat";
-    // }
-}, 5000);
+        if (scrollTwoColor.value == "hsl(0, 0%, 100%)") {
+            slideOneStyleMargin.value = '0 0 0 -60vw';
+            slideTwoStyleMargin.value = '0';
+            slideThreeStyleMargin.value = '0';
+        }
+        else if (scrollThreeColor.value == "hsl(0, 0%, 100%)") {
+            slideOneStyleMargin.value = '0 0 0 -140vw';
+            slideTwoStyleMargin.value = '0';
+            slideThreeStyleMargin.value = '0';
+        }
+        else{
+            slideOneStyleMargin.value = '0 0 0 12vw';
+            slideTwoStyleMargin.value = '0';
+            slideThreeStyleMargin.value = '0';
+        }
+    }, 5000);
+}
+
 
 // function updateStyles() {
 //     if (windowWidth.value < 875) {
