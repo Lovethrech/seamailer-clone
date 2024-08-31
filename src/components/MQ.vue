@@ -37,7 +37,6 @@ h3{
     .rate{
         flex-direction:column;
     }
-    
 }
 </style>
 

@@ -19,7 +19,8 @@ h2{
         padding:4vh 0;
     }
     h2{
-        font-size:26px;
+        padding:4vw;
+        font-size:24px;
     }
 }
 </style>

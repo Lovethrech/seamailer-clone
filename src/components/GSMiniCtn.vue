@@ -5,7 +5,6 @@ import BlueBtn from "@/components/BlueBtn.vue";
 import OrangeBtn from "@/components/OrangeBtn.vue";
 
 const btnDescInfo = ref([growthInfos[0]]);
-console.log(btnDescInfo);
 </script>
 
 <style scoped>
@@ -41,7 +40,7 @@ console.log(btnDescInfo);
 .title{
     color: #14213d;
     text-transform: capitalize;
-    font-size:24px;
+    font-size:22px;
     font-family: "Open Sans", sans-serif;
     font-weight:600;
 }
@@ -49,12 +48,20 @@ console.log(btnDescInfo);
     color:#14213d;
     width:400px;
     line-height: 1.5;
+    font-size:16px;
     font-family: "Roboto Condensed", system-ui;
 }
 .btn-ctn{
     width:130px;
 }
-
+@media screen and (max-width:875px){
+    .desc{
+        font-size:14px;
+    }
+    .card:hover{
+        transform:scale(1);
+    }
+}
 @media screen and (max-width:780px) {
     .card, .card:nth-child(2){
         justify-content: center;

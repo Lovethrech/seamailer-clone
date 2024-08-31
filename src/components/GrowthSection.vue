@@ -17,7 +17,16 @@ h2{
     font-weight:600;
 }
 p{
+    font-size:16px;
     font-family: "Roboto Condensed", system-ui;
+}
+@media screen and (max-width:875px) {
+    h2{
+        font-size:24px;
+    }
+    p{
+        font-size:14px;
+    }
 }
 </style>
 
