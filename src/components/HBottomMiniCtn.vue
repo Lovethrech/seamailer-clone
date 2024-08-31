@@ -10,48 +10,91 @@ const windowWidth = ref(window.innerWidth);
 const slideOneStyleMargin = ref('4vh 0 4vh');
 const slideTwoStyleMargin = ref('2vh 0 4vh');
 const slideThreeStyleMargin = ref('4vh 0 4vh');
+let attributeIndex = 0;
+const attributes = [
+    { scrollOneColor: "hsl(0, 0%, 100%)", scrollTwoColor: "transparent", scrollThreeColor: "transparent" },
+    { scrollOneColor: "transparent", scrollTwoColor: "hsl(0, 0%, 100%)", scrollThreeColor: "transparent" },
+    { scrollOneColor: "transparent", scrollTwoColor: "transparent", scrollThreeColor: "hsl(0, 0%, 100%)" },
+];
 
 function updateStyles() {
     if (windowWidth.value < 875) {
+        slideOneStyleMargin.value = '0 0 0 8vw';
+        slideTwoStyleMargin.value = '0';
+        slideThreeStyleMargin.value = '0';
+    }
+    else {
         slideOneStyleMargin.value = '4vh 0 4vh';
         slideTwoStyleMargin.value = '2vh 0 4vh';
         slideThreeStyleMargin.value = '4vh 0 4vh'; 
     }
-    else {
-        setInterval(() => {
-            if (scrollOneColor.value === "hsl(0,0%,100%)") {
-                scrollOneColor.value = "transparent";
-                scrollTwoColor.value = "hsl(0, 0%, 100%)";
-                scrollThreeColor.value = "transparent";
-                slideOneStyleMargin.value = '0 0 0 -8vw';
-                slideTwoStyleMargin.value = '0';
-                slideThreeStyleMargin.value = '0';
-            }
-            else if (scrollTwoColor.value === "hsl(0, 0%, 100%)") {
-                scrollOneColor.value = "transparent";
-                scrollThreeColor.value = "hsl(0, 0%, 100%)";
-                scrollTwoColor.value = "transparent";
-                scrollThreeColor.value = "hsl(0, 0%, 100%)";
-                slideOneStyleMargin.value = '0 0 0 -330vw';
-                slideTwoStyleMargin.value = '0';
-                slideThreeStyleMargin.value = '0';
-            }
-            else {
-                scrollTwoColor.value = "transparent";
-                scrollOneColor.value = "hsl(0, 0%, 100%)";
-                scrollThreeColor.value = "transparent";
-                slideOneStyleMargin.value = '0 0 0 -700vw';
-                slideTwoStyleMargin.value = '0';
-                slideThreeStyleMargin.value = '0';
-            }
-        }, 5000); 
-    }
 }
-
 window.addEventListener('resize', () => {
     windowWidth.value = window.innerWidth;
-    updateStyles();
+    updateStyles()
 })
+setInterval(() => {
+    attributeIndex = (attributeIndex + 1) % attributes.length;
+    const currentAttribute = attributes[attributeIndex];
+    scrollOneColor.value = currentAttribute.scrollOneColor;
+    scrollTwoColor.value = currentAttribute.scrollTwoColor;
+    scrollThreeColor.value = currentAttribute.scrollThreeColor;
+
+    if (scrollTwoColor.value === "hsl(0, 0%, 100%)") {
+        slideOneStyleMargin.value = '0 0 0 1300pxw';
+        slideTwoStyleMargin.value = '0';
+        slideThreeStyleMargin.value = '0';
+        updateStyles();
+    }
+    // else if (scrollThreeColor.value == "hsl(0, 0%, 100%)") {
+    //     imageBg.value = "url(/psk-large.jpg) center/100% auto no-repeat";
+    //     updateStyles()
+    // }
+    // else {
+    //     imageBg.value = "url(/toa-large.jpg) center/100% auto no-repeat";
+    // }
+}, 5000);
+
+// function updateStyles() {
+//     if (windowWidth.value < 875) {
+//         setInterval(() => {
+//             if (scrollOneColor.value === "hsl(0,0%,100%)") {
+//                 scrollOneColor.value = "transparent";
+//                 scrollTwoColor.value = "hsl(0, 0%, 100%)";
+//                 scrollThreeColor.value = "transparent";
+//                 slideOneStyleMargin.value = '0 0 0 -8vw';
+//                 slideTwoStyleMargin.value = '0';
+//                 slideThreeStyleMargin.value = '0';
+//             }
+//             else if (scrollTwoColor.value === "hsl(0, 0%, 100%)") {
+//                 scrollOneColor.value = "transparent";
+//                 scrollTwoColor.value = "transparent";
+//                 scrollThreeColor.value = "hsl(0, 0%, 100%)";
+//                 slideOneStyleMargin.value = '0 0 0 -130vw';
+//                 slideTwoStyleMargin.value = '0';
+//                 slideThreeStyleMargin.value = '0';
+//             }
+//             else {
+//                 scrollTwoColor.value = "transparent";
+//                 scrollOneColor.value = "hsl(0, 0%, 100%)";
+//                 scrollThreeColor.value = "transparent";
+//                 slideOneStyleMargin.value = '0 0 0 -200vw';
+//                 slideTwoStyleMargin.value = '0';
+//                 slideThreeStyleMargin.value = '0';
+//             }
+//         }, 5000); 
+//     }
+//     else {
+//         slideOneStyleMargin.value = '4vh 0 4vh';
+//         slideTwoStyleMargin.value = '2vh 0 4vh';
+//         slideThreeStyleMargin.value = '4vh 0 4vh'; 
+//     }
+// }
+
+// window.addEventListener('resize', () => {
+//     windowWidth.value = window.innerWidth;
+//     updateStyles();
+// })
 </script>
 
 <style scoped>
