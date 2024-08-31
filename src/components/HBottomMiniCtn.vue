@@ -52,54 +52,10 @@ if (windowWidth.value < 875) {
             slideThreeStyleMargin.value = '0';
         }
         else{
-            slideOneStyleMargin.value = '0 0 0 12vw';
-            slideTwoStyleMargin.value = '0';
-            slideThreeStyleMargin.value = '0';
+            updateStyles();
         }
     }, 5000);
 }
-
-
-// function updateStyles() {
-//     if (windowWidth.value < 875) {
-//         setInterval(() => {
-//             if (scrollOneColor.value === "hsl(0,0%,100%)") {
-//                 scrollOneColor.value = "transparent";
-//                 scrollTwoColor.value = "hsl(0, 0%, 100%)";
-//                 scrollThreeColor.value = "transparent";
-//                 slideOneStyleMargin.value = '0 0 0 -8vw';
-//                 slideTwoStyleMargin.value = '0';
-//                 slideThreeStyleMargin.value = '0';
-//             }
-//             else if (scrollTwoColor.value === "hsl(0, 0%, 100%)") {
-//                 scrollOneColor.value = "transparent";
-//                 scrollTwoColor.value = "transparent";
-//                 scrollThreeColor.value = "hsl(0, 0%, 100%)";
-//                 slideOneStyleMargin.value = '0 0 0 -130vw';
-//                 slideTwoStyleMargin.value = '0';
-//                 slideThreeStyleMargin.value = '0';
-//             }
-//             else {
-//                 scrollTwoColor.value = "transparent";
-//                 scrollOneColor.value = "hsl(0, 0%, 100%)";
-//                 scrollThreeColor.value = "transparent";
-//                 slideOneStyleMargin.value = '0 0 0 -200vw';
-//                 slideTwoStyleMargin.value = '0';
-//                 slideThreeStyleMargin.value = '0';
-//             }
-//         }, 5000); 
-//     }
-//     else {
-//         slideOneStyleMargin.value = '4vh 0 4vh';
-//         slideTwoStyleMargin.value = '2vh 0 4vh';
-//         slideThreeStyleMargin.value = '4vh 0 4vh'; 
-//     }
-// }
-
-// window.addEventListener('resize', () => {
-//     windowWidth.value = window.innerWidth;
-//     updateStyles();
-// })
 </script>
 
 <style scoped>
