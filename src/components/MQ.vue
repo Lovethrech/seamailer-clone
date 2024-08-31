@@ -33,6 +33,12 @@ h3{
     gap:6vw;
     text-align:center;
 }
+@media screen and (max-width:875px) {
+    .rate{
+        flex-direction:column;
+    }
+    
+}
 </style>
 
 <template>
