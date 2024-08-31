@@ -13,6 +13,11 @@ h2, p{
 }
 h2{
     font-size:30px;
+    font-family: "Open Sans", sans-serif;
+    font-weight:600;
+}
+p{
+    font-family: "Roboto Condensed", system-ui;
 }
 </style>
 

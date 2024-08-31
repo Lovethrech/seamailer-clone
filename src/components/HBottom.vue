@@ -11,6 +11,7 @@ h2{
     text-align:center;
     color: #14213d;
     font-size:30px;
+    font-family: "Open Sans", sans-serif;
     font-weight:600;
 }
 @media screen and (max-width:875px) {

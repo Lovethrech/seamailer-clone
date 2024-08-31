@@ -9,8 +9,6 @@ console.log(btnDescInfo);
 </script>
 
 <style scoped>
-.mini-ctn{
-}
 .card{
     background-color:white;
     display:flex;
@@ -43,13 +41,15 @@ console.log(btnDescInfo);
 .title{
     color: #14213d;
     text-transform: capitalize;
-    font-size:26px;
+    font-size:24px;
+    font-family: "Open Sans", sans-serif;
     font-weight:600;
 }
 .desc{
     color:#14213d;
     width:400px;
     line-height: 1.5;
+    font-family: "Roboto Condensed", system-ui;
 }
 .btn-ctn{
     width:130px;

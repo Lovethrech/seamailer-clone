@@ -1,5 +1,6 @@
 <style scoped>
 .ctn{
+    font-family: "Open Sans", sans-serif;
     text-align:center;
     line-height:1.5;
 }

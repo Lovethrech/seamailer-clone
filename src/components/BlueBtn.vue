@@ -18,6 +18,7 @@ button{
     color:white;
     padding:10px 15px;
     text-transform: capitalize;
+    font-family: "Roboto Condensed", system-ui;
     font-weight:600;
 }
 .ctn:hover{

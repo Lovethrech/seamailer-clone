@@ -79,11 +79,13 @@ window.addEventListener('resize', () => {
     color: #14213d;
     margin-top:2vh;
     font-size:20px;
-    font-weight:800;
+    font-family: "Open Sans", sans-serif;
+    font-weight:600;
 }
 .paragraph{
     color:rgb(110, 110, 110);
     line-height:1.5;
+    font-family: "Roboto Condensed", system-ui;
 }
 .slide-ctn{
     display:none;
