@@ -1,6 +1,4 @@
 <script setup>
-import { defineProps } from "vue";
-
 const { btnData } = defineProps(['btnData']);
 </script>
 

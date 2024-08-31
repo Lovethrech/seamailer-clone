@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref } from "vue";
 import converts from "@/data/converts.json";
 
 // Getting a timed-slider
@@ -28,17 +28,23 @@ function updateStyles() {
                 slideThreeStyleMargin.value = '0';
             }
             else if (scrollTwoColor.value === "hsl(0, 0%, 100%)") {
+                scrollOneColor.value = "transparent";
+                scrollThreeColor.value = "hsl(0, 0%, 100%)";
+                scrollTwoColor.value = "transparent";
                 scrollThreeColor.value = "hsl(0, 0%, 100%)";
                 slideOneStyleMargin.value = '0 0 0 -330vw';
                 slideTwoStyleMargin.value = '0';
                 slideThreeStyleMargin.value = '0';
             }
             else {
+                scrollTwoColor.value = "transparent";
+                scrollOneColor.value = "hsl(0, 0%, 100%)";
+                scrollThreeColor.value = "transparent";
                 slideOneStyleMargin.value = '0 0 0 -700vw';
                 slideTwoStyleMargin.value = '0';
                 slideThreeStyleMargin.value = '0';
             }
-        }, 1000); 
+        }, 5000); 
     }
 }
 
@@ -100,7 +106,7 @@ window.addEventListener('resize', () => {
     }
     .ctn{
         margin:3vh 0;
-        justify-content: center;
+        justify-content: left;
         gap:30px;
         width:300vw;
     }
