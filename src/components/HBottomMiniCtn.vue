@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import converts from "@/data/converts.json";
 
 // Getting a timed-slider
@@ -18,10 +18,10 @@ const attributes = [
 ];
 
 function updateStyles() {
-    if (windowWidth.value > 875) {
+    if (windowWidth.value < 875) {
         slideOneStyleMargin.value = '4vh 0 4vh';
         slideTwoStyleMargin.value = '2vh 0 4vh';
-        slideThreeStyleMargin.value = '4vh 0 4vh';
+        slideThreeStyleMargin.value = '4vh 0 4vh'; 
     }
     else {
         setInterval(() => {
@@ -31,29 +31,33 @@ function updateStyles() {
             scrollTwoColor.value = currentAttribute.scrollTwoColor;
             scrollThreeColor.value = currentAttribute.scrollThreeColor;
 
-            if (scrollTwoColor.value === "hsl(0, 0%, 100%)") {
-                scrollTwoColor.value = "hsl(0, 0%, 100%)"
-                slideOneStyleMargin.value = '0 0 0 -330px';
+            if (scrollOneColor.value === "hsl(0,0%,100%)") {
+                scrollOneColor.value = "transparent";
+                scrollTwoColor.value = "hsl(0, 0%, 100%)";
+                scrollThreeColor.value = "transparent";
+                slideOneStyleMargin.value = '0 0 0 -80vw';
                 slideTwoStyleMargin.value = '0';
                 slideThreeStyleMargin.value = '0';
             }
-            else if (scrollThreeColor.value === "hsl(0, 0%, 100%)") {
-                slideOneStyleMargin.value = '0 0 0 -700px';
+            else if (scrollTwoColor.value === "hsl(0, 0%, 100%)") {
+                scrollThreeColor.value = "hsl(0, 0%, 100%)";
+                slideOneStyleMargin.value = '0 0 0 -330vw';
                 slideTwoStyleMargin.value = '0';
                 slideThreeStyleMargin.value = '0';
             }
             else {
-                slideOneStyleMargin.value = '0 0 0 8vw';
+                slideOneStyleMargin.value = '0 0 0 -700vw';
                 slideTwoStyleMargin.value = '0';
                 slideThreeStyleMargin.value = '0';
             }
-        },5000); 
+        }, 1000); 
     }
 }
-window.addEventListener('resize', () => {
-    windowWidth.value = window.innerWidth;
-    updateStyles();
-})
+
+// window.addEventListener('resize', () => {
+//     windowWidth.value = window.innerWidth;
+//     updateStyles();
+// })
 </script>
 
 <style scoped>
@@ -108,9 +112,9 @@ window.addEventListener('resize', () => {
     }
     .ctn{
         margin:3vh 0;
-        justify-content: left;
+        justify-content: center;
         gap:30px;
-        width:1200px;
+        width:300vw;
     }
     .card{
         width: 70vw;
