@@ -47,7 +47,7 @@ if (windowWidth.value < 875) {
             slideThreeStyleMargin.value = '0';
         }
         else if (scrollThreeColor.value == "hsl(0, 0%, 100%)") {
-            slideOneStyleMargin.value = '0 0 0 -140vw';
+            slideOneStyleMargin.value = '0 0 0 -128vw';
             slideTwoStyleMargin.value = '0';
             slideThreeStyleMargin.value = '0';
         }
