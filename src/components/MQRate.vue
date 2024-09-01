@@ -8,7 +8,7 @@ const { qRate } = defineProps(['qRate']);
 }
 .title{
     color:white;
-    font-family: "Roboto Condensed", system-ui;
+    font-family: "Bebas Neue", sans-serif;
     font-weight:800;
     font-size:26px;
     letter-spacing:2px;

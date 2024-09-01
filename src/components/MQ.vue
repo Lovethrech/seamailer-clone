@@ -1,8 +1,11 @@
 <script setup>
 import { ref } from "vue";
 import MQRate from "@/components/MQRate.vue";
+import growthInfos from "@/data/growth-infos.json";
 import qRates from "@/data/q-rates.json";
+import OrangeBtn from "@/components/OrangeBtn.vue";
 
+const btnDescInfo = ref([growthInfos[0]]);
 const typeId = ref([qRates[0]]);
 const deliverId = ref([qRates[1]]);
 const supportId = ref([qRates[2]]);
@@ -46,11 +49,11 @@ h3{
             <h3>Why choose <b class="logo-name">Seamailer?</b></h3>
             <div class="rate">
                 <MQRate :qRate="typeId"></MQRate>
-                <br/>
                 <MQRate :qRate="deliverId"></MQRate>
-                <br/>
                 <MQRate :qRate="supportId"></MQRate>
             </div>
+            <OrangeBtn :btnData='btnDescInfo'></OrangeBtn>
+            <p class="btn-text"></p>
         </div>
     </div>
 </template>
