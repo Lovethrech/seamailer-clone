@@ -13,7 +13,7 @@ button {
 }
 button {
     width: 100%;
-    background-color: #f1914f;
+    background-color: #FCA311;
     padding: 10px 15px;
     text-transform: capitalize;
     font-weight: 600;

@@ -1,0 +1,42 @@
+[
+    {
+        "id":"1",
+        "title":"Email Design",
+        "desc": "Our simple, intuitive drag & drop email designer will help unleash your creativity in a short time, enabling you send emails to your contacts in minutes."
+    },
+    {
+        "id":"2",
+        "title":"Template Gallery",
+        "desc": "Our collection of pre-designed templates allows you to create eye-catching emails swiftly. Just select a design that suites you & customize it to fit your needs."
+    },
+    {
+        "id":"3",
+        "title":"Personalization of Emails",
+        "desc": "Customize your emails using your recipients' name, contact and custom information."
+    },
+    {
+        "id":"4",
+        "title":"Scheduled Campaigns",
+        "desc": "Effortlessly plan your campaigns for future delivery to contacts. We will automatically handle the rest for you."
+    },
+    {
+        "id":"5",
+        "title":"Contact Segmentation",
+        "desc": "Effortlessly organize your contacts by categorizing them and customizing campaigns & emails for them."
+    },
+    {
+        "id":"6",
+        "title":"Email Activity Reports",
+        "desc": "Detailed analysis of clicks and open rates for every campaign & mail delivered to your audience."
+    },
+    {
+        "id":"7",
+        "title":"Manage Your Media & Files",
+        "desc": "Embed images and files in your emails and campaigns by uploading them directly on seamailer."
+    },
+    {
+        "id":"8",
+        "title":"Connect Your Applications",
+        "desc": "Easily send emails via your applications with Seamailer's APi and SDK integrations."
+    }
+]
