@@ -37,6 +37,11 @@ h3{
     gap:6vw;
     text-align:center;
 }
+.btn-text{
+    text-align:center;
+    color:#C7C7C7;
+    font-size:14px;
+}
 @media screen and (max-width:875px) {
     .rate{
         flex-direction:column;
@@ -54,7 +59,10 @@ h3{
                 <MQRate :qRate="supportId"></MQRate>
             </div>
             <OrangeBtn :textColor="textColor" :btnData='btnDescInfo'></OrangeBtn>
-            <p class="btn-text"></p>
+            <br>
+            <p class="btn-text">
+                Get 7,000 emails and 1,000 contacts for free per month
+            </p>
         </div>
     </div>
 </template>
