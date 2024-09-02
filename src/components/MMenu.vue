@@ -1,10 +1,3 @@
-<!-- <script setup>
-import BlueBtn from "@/components/BlueBtn.vue";
-import navLists from "@/data/nav-list.json";
-
-const loginId = ref([navLists[0]]);
-const signUpId = ref([navLists[1]]);
-</script> -->
 <script setup>
 import { ref } from "vue";
 import BlueBtn from "@/components/BlueBtn.vue";
@@ -12,6 +5,8 @@ import navLists from "@/data/nav-list.json";
 
 const loginId = ref([navLists[0]]);
 const signUpId = ref([navLists[1]]);
+const loginBtnWidth = ref("300px");
+const signUpBtnWidth = ref("100px");
 </script>
 <style scoped>
 .m-menu-ctn {
@@ -20,13 +15,13 @@ const signUpId = ref([navLists[1]]);
     right: 0;
     left: 0;
     width: 100%;
-    background-color: #14213d;
+    background-color: #ffffff;
+    padding:20px 6vw;
 }
-
 .m-menu-mini-ctn {
     display: flex;
     justify-content: center;
-    gap: 20vw;
+    gap: 2vw;
 }
 @media screen and (max-width:875px) {
     .m-menu-icon-ctn {
@@ -39,8 +34,16 @@ const signUpId = ref([navLists[1]]);
 <template>
     <div class="m-menu-ctn">
         <div class="m-menu-mini-ctn">
-            <BlueBtn :btnData="loginId"></BlueBtn>
-            <BlueBtn :btnData="signUpId"></BlueBtn>
+            <BlueBtn 
+                :btnData="loginId"
+                :btnWidth="loginBtnWidth"
+            >
+            </BlueBtn>
+            <BlueBtn 
+                :btnData="signUpId"
+                :btnWidth="signUpBtnWidth"
+            >
+            </BlueBtn>
         </div>
     </div>
 </template>

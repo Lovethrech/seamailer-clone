@@ -6,6 +6,7 @@ import navLists from "@/data/nav-list.json";
 
 const loginId = ref([navLists[0]]);
 const signUpId = ref([navLists[1]]);
+const btnWidth = ref("100%");
 </script>
 
 <style scoped>
@@ -36,8 +37,16 @@ const signUpId = ref([navLists[1]]);
 <template>
     <div class="ctn">
         <div class="main-ctn">
-            <BlueBtn :btnData="loginId"></BlueBtn>
-            <BlueBtn :btnData="signUpId"></BlueBtn>
+            <BlueBtn 
+                :btnData="loginId"
+                :btnWidth="btnWidth"
+            >
+            </BlueBtn>
+            <BlueBtn 
+                :btnData="signUpId"
+                :btnWidth="btnWidth"
+            >
+            </BlueBtn>
         </div>
         <div class="m-menu-icon-ctn">
             <i class='bx bx-menu'></i>

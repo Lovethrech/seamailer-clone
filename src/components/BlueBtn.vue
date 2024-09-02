@@ -1,5 +1,5 @@
 <script setup>
-const { btnData } = defineProps(['btnData']);
+const { btnData,btnWidth } = defineProps(['btnData', 'btnWidth']);
 </script>
 
 <style scoped>
@@ -11,7 +11,6 @@ const { btnData } = defineProps(['btnData']);
     box-shadow:inset 0px 0px 6px 8px black;
 }
 button{
-    width: 100%;
     background-color: #14213d;
     color:white;
     padding:10px 15px;
@@ -29,7 +28,7 @@ button{
 <template>
     <div class="ctn">
         <a :href="btnData[0].link " target="_blank" rel="noopener noreferrer">
-            <button :key="btnData[0].id">
+            <button :key="btnData[0].id" :style="{width:btnWidth}">
                 {{ btnData[0].name }}
             </button>
         </a>
