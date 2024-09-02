@@ -14,12 +14,11 @@ import MoreCard from "@/components/MoreCard.vue";
 .title{
     color:#FCA311;
     font-size:30px;
+    font-family: "Open Sans", sans-serif;
 }
 .desc{
     color: #C7C7C7;
-}
-.card-box{
-    background-color: transparent;
+    font-family: "Roboto Condensed", system-ui;
 }
 </style>
 
@@ -28,9 +27,8 @@ import MoreCard from "@/components/MoreCard.vue";
         <div class="mini-ctn">
             <h3 class="title">There is more for you</h3>
             <p class="desc">We are unlimited and so are you</p>
-            <div class="card-box">
-                <MoreCard></MoreCard>
-            </div>
+            <br>
+            <MoreCard></MoreCard>
         </div>
     </div>
 </template>
