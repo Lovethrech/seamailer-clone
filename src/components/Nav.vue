@@ -22,27 +22,13 @@ const signUpId = ref([navLists[1]]);
     margin:auto 0;
     display:none;
 }
-.m-menu-ctn{
-    display:none;
-    position:absolute;
-    top:6vh;
-    right:0;
-    left:0;
-    width:100%;
-    background-color: #14213d;
-}
-.m-menu-mini-ctn{
-    display:flex;
-    justify-content: center;
-    gap:20vw;
-}
 @media screen and (max-width:875px){
     .main-ctn{
         display:none;
     }
-    .m-menu-icon-ctn{
+    .m-menu-icon-ctn {
         display: flex;
-        font-size:20px;
+        font-size: 20px;
     }
 }
 </style>
@@ -57,6 +43,8 @@ const signUpId = ref([navLists[1]]);
             <i class='bx bx-menu'></i>
             <!-- <i class='bx bx-x'></i> -->
         </div>
-        <MMenu></MMenu>
+        <div class="menu">
+            <MMenu></MMenu>  
+        </div>
     </div>
 </template>

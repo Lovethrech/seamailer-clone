@@ -89,7 +89,7 @@ const btnDescInfo = ref([growthInfos[0]]);
         <div class="mini-ctn">
             <div class="card">
                 <div class="img-ctn">
-                    <img :src="growthInfos[0].img" :alt="growthInfos[0].img-alt">
+                    <img :src="growthInfos[0].img" :alt="growthInfos[0].imgAlt">
                 </div>
                 <div class="text-ctn">
                     <p class="title">{{growthInfos[0].title}}</p>
@@ -103,7 +103,7 @@ const btnDescInfo = ref([growthInfos[0]]);
             </div>
             <div class="card">
                 <div class="img-ctn">
-                    <img :src="growthInfos[1].img" :alt="growthInfos[1].img-alt">
+                    <img :src="growthInfos[1].img" :alt="growthInfos[1].imgAlt">
                 </div>
                 <div class="text-ctn">
                     <p class="title">{{growthInfos[1].title}}</p>
@@ -117,7 +117,7 @@ const btnDescInfo = ref([growthInfos[0]]);
             </div>
             <div class="card">
                 <div class="img-ctn">
-                    <img :src="growthInfos[2].img" :alt="growthInfos[2].img-alt">
+                    <img :src="growthInfos[2].img" :alt="growthInfos[2].imgAlt">
                 </div>
                 <div class="text-ctn">
                     <p class="title">{{ growthInfos[2].title }}</p>

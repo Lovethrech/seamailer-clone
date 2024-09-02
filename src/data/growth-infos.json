@@ -2,7 +2,7 @@
     {
         "id":"1",
         "img":"/clark-small.jpg",
-        "img-alt":"Business owners",
+        "imgAlt":"Business owners",
         "title":"small business owners",
         "desc":"A cost-effective way to engage with customers, drive sales, and build lasting relationships and repeat sales.",
         "name":"Get Started"
@@ -10,7 +10,7 @@
     {
         "id":"2",
         "img":"/kan-small.jpg",
-        "img-alt":"freelancers",
+        "imgAlt":"freelancers",
         "title":"freelancers & content",
         "desc":"Directly engage with your audience, nurture relationships, and monetize your expertise through targeted campaigns.",
         "name":"Get Started"
@@ -18,7 +18,7 @@
     {
         "id":"3",
         "img":"/blake-small.jpg",
-        "img-alt":"start-ups",
+        "imgAlt":"start-ups",
         "title":"startups & developers",
         "desc":"Send volume of emails with freedom from your application with our easy to use APIs and SDKs.",
         "name":"Get Started"
