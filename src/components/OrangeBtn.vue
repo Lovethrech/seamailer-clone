@@ -1,5 +1,5 @@
 <script setup>
-const { btnData } = defineProps(['btnData']);
+const { btnData,textColor } = defineProps(['btnData', 'textColor']);
 </script>
 
 <style scoped>
@@ -14,7 +14,6 @@ button {
 button {
     width: 100%;
     background-color: #f1914f;
-    color: white;
     padding: 10px 15px;
     text-transform: capitalize;
     font-weight: 600;
@@ -29,7 +28,7 @@ button {
 <template>
     <div class="ctn">
         <a :href="btnData[0].link" target="_blank" rel="noopener noreferrer">
-            <button :key="btnData[0].id">
+            <button :key="btnData[0].id" :style="{color:textColor}">
                 {{ btnData[0].name }}
             </button>
         </a>

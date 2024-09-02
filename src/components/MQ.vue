@@ -9,6 +9,7 @@ const btnDescInfo = ref([growthInfos[0]]);
 const typeId = ref([qRates[0]]);
 const deliverId = ref([qRates[1]]);
 const supportId = ref([qRates[2]]);
+const textColor = ref("hsl(0, 0%, 0%");
 </script>
 
 <style scoped>
@@ -52,7 +53,7 @@ h3{
                 <MQRate :qRate="deliverId"></MQRate>
                 <MQRate :qRate="supportId"></MQRate>
             </div>
-            <OrangeBtn :btnData='btnDescInfo'></OrangeBtn>
+            <OrangeBtn :textColor="textColor" :btnData='btnDescInfo'></OrangeBtn>
             <p class="btn-text"></p>
         </div>
     </div>

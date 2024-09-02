@@ -5,11 +5,13 @@ import BlueBtn from "@/components/BlueBtn.vue";
 import OrangeBtn from "@/components/OrangeBtn.vue";
 
 const btnDescInfo = ref([growthInfos[0]]);
+const textColor = ref("hsl(0, 0%, 100%");
+const btnWidth = ref("100%");
 </script>
 
 <style scoped>
 .card{
-    background-color:white;
+    background-color:hsl(0, 0%, 100%);
     display:flex;
     flex-direction:row;
     justify-content: center;
@@ -97,7 +99,7 @@ const btnDescInfo = ref([growthInfos[0]]);
                     <p class="desc">{{growthInfos[0].desc}}</p>
                     <br>
                     <div class="btn-ctn">
-                        <BlueBtn :btnData='btnDescInfo'></BlueBtn>
+                        <BlueBtn :btnWidth="btnWidth" :btnData='btnDescInfo'></BlueBtn>
                     </div>
                 </div>
             </div>
@@ -111,7 +113,7 @@ const btnDescInfo = ref([growthInfos[0]]);
                     <p class="desc">{{growthInfos[1].desc}}</p>
                     <br>
                     <div class="btn-ctn">
-                        <OrangeBtn :btnData='btnDescInfo'></OrangeBtn>
+                        <OrangeBtn :textColor="textColor" :btnData='btnDescInfo'></OrangeBtn>
                     </div>
                 </div>
             </div>
@@ -125,7 +127,7 @@ const btnDescInfo = ref([growthInfos[0]]);
                     <p class="desc">{{ growthInfos[2].desc }}</p>
                     <br>
                     <div class="btn-ctn">
-                        <BlueBtn :btnData='btnDescInfo'></BlueBtn>
+                        <BlueBtn :btnWidth="btnWidth" :btnData='btnDescInfo'></BlueBtn>
                     </div>
                 </div>
             </div>
