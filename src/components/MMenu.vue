@@ -24,10 +24,6 @@ const signUpBtnWidth = ref("100px");
     gap: 2vw;
 }
 @media screen and (max-width:875px) {
-    .m-menu-icon-ctn {
-        display: flex;
-        font-size: 20px;
-    }
 }
 </style>
 

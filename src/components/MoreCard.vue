@@ -33,8 +33,15 @@ import mores from "@/data/mores.json";
     line-height: 1.5;
     font-family: "Roboto Condensed", system-ui;
 }
-.card:nth-child(5) .title, .card:nth-child(6) .title, .card:nth-child(7) .title, .card:nth-child(8) .title{
+.card:nth-child(2) .title, .card:nth-child(4) .title, .card:nth-child(6) .title, .card:nth-child(8) .title{
     color:#70D6ff;
+}
+
+@media screen and (max-width:800px) {
+    .card{
+        width:90%;
+        height:100%;
+    }
 }
 </style>
 

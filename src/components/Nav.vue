@@ -8,15 +8,15 @@ const loginId = ref([navLists[0]]);
 const signUpId = ref([navLists[1]]);
 const btnWidth = ref("100%");
 const menuIcon = ref("<i class='bx bx-menu'></i>");
-const showDropdown = ref("none");
+const showDropdown = ref(false);
 const displayMenu = () => {
-    if (menuIcon.value === "<i class='bx bx-menu'></i>") {
+    if (showDropdown.value === false) {
         menuIcon.value = "<i class='bx bx-x'></i>";
-        showDropdown.value = "flex;";
+        showDropdown.value = true;
     }
     else {
         menuIcon.value = "<i class='bx bx-menu'></i>";
-        showDropdown.value = "none";
+        showDropdown.value = false;
     }
 }
 </script>
@@ -61,12 +61,12 @@ const displayMenu = () => {
             </BlueBtn>
         </div>
         <div 
+            :onClick="displayMenu"
             v-html="menuIcon"
-            :click="displayMenu"
             class="m-menu-icon-ctn" 
         >
         </div>
-        <div :style="{ display: showDropdown}" class="menu">
+        <div v-show="showDropdown" class="menu">
             <MMenu></MMenu>  
         </div>
     </div>
