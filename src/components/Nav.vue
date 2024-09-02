@@ -7,6 +7,18 @@ import navLists from "@/data/nav-list.json";
 const loginId = ref([navLists[0]]);
 const signUpId = ref([navLists[1]]);
 const btnWidth = ref("100%");
+const menuIcon = ref("<i class='bx bx-menu'></i>");
+const showDropdown = ref("none");
+const displayMenu = () => {
+    if (menuIcon.value === "<i class='bx bx-menu'></i>") {
+        menuIcon.value = "<i class='bx bx-x'></i>";
+        showDropdown.value = "flex;";
+    }
+    else {
+        menuIcon.value = "<i class='bx bx-menu'></i>";
+        showDropdown.value = "none";
+    }
+}
 </script>
 
 <style scoped>
@@ -48,11 +60,13 @@ const btnWidth = ref("100%");
             >
             </BlueBtn>
         </div>
-        <div class="m-menu-icon-ctn">
-            <i class='bx bx-menu'></i>
-            <!-- <i class='bx bx-x'></i> -->
+        <div 
+            v-html="menuIcon"
+            :click="displayMenu"
+            class="m-menu-icon-ctn" 
+        >
         </div>
-        <div class="menu">
+        <div :style="{ display: showDropdown}" class="menu">
             <MMenu></MMenu>  
         </div>
     </div>
