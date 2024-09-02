@@ -18,7 +18,7 @@ const textColor = ref("hsl(0, 0%, 0%");
     color:white;
     display:flex;
     justify-content: center;
-    padding:4vh 4vw;
+    padding:8vh 4vw;
 }
 h3{
     color:#C7C7C7;

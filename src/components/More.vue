@@ -6,7 +6,7 @@ import MoreCard from "@/components/MoreCard.vue";
 .main-ctn{
     background: linear-gradient(to bottom, #161616, #000000, #161616);
     color:white;
-    padding:6vh 6vw;
+    padding:8vh 6vw;
 }
 .title, .desc{
     text-align:center;
