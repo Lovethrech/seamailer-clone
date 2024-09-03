@@ -4,7 +4,7 @@
         "sups":"Personal",
         "name":"Free",
         "subs":"Always Free",
-        "list":[
+        "lists":[
             {
                 "id":"1",
                 "desc":"7,000 monthly emails"
@@ -56,7 +56,7 @@
         "sups":"Creators & small business",
         "name":"#5,000",
         "subs":"per/month",
-        "list":[
+        "lists":[
             {
                 "id":"1",
                 "desc":"everything in free plan"
@@ -116,7 +116,7 @@
         "sups":"Professional",
         "name":"Lets Talk",
         "subs":"For businesses & builders that want to do more",
-        "list":[
+        "lists":[
             {
                 "id":"1",
                 "desc":"Everything in creators plan"
