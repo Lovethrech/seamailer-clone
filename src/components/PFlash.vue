@@ -9,12 +9,16 @@
     display:flex;
     justify-content: center;
     gap:10px;
-    font-size:14px;
+    font-size:12px;
     background-color:rgba(0, 128, 0, 0.13);
     color:green;
-    padding:10px 20px;
+    padding:5px 10px;
     border-radius:20px;
     border:2px solid green;
+}
+.mini-ctn:hover{
+    transform:scaleX(1.04);
+    transition: all 1s;
 }
 </style>
 
