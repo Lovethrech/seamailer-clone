@@ -1,0 +1,186 @@
+[
+    {
+        "id":"1",
+        "sups":"Personal",
+        "name":"Free",
+        "subs":"Always Free",
+        "list":[
+            {
+                "id":"1",
+                "desc":"7,000 monthly emails"
+            },
+            {
+                "id":"2",
+                "desc":"No limits on daily emails"
+            },
+            {
+                "id":"3",
+                "desc":"up to 1,000 contacts"
+            },
+            {
+                "id":"4",
+                "desc":"1 team member"
+            },
+            {
+                "id":"5",
+                "desc":"5 beautifully made templates"
+            },
+            {
+                "id":"6",
+                "desc":"50 custom templates"
+            },
+            {
+                "id":"7",
+                "desc":"email tracking & analytics"
+            },
+            {
+                "id":"8",
+                "desc":"contact grouping"
+            },
+            {
+                "id":"9",
+                "desc":"2mb max file upload"
+            },
+            {
+                "id":"10",
+                "desc":"API and SDK integration"
+            },
+            {
+                "id":"11",
+                "desc":"In App Support"
+            }
+        ]
+    },
+    {
+        "id":"2",
+        "sups":"Creators & small business",
+        "name":"#5,000",
+        "subs":"per/month",
+        "list":[
+            {
+                "id":"1",
+                "desc":"everything in free plan"
+            },
+            {
+                "id":"2",
+                "desc":"Up-to 5,000 contacts"
+            },
+            {
+                "id":"3",
+                "desc":"80,000 monthly emails"
+            },
+            {
+                "id":"4",
+                "desc":"3 team members"
+            },
+            {
+                "id":"5",
+                "desc":"campaign scheduling"
+            },
+            {
+                "id":"6",
+                "desc":"contact segmentation"
+            },
+            {
+                "id":"7",
+                "desc":"remove seamailer branding"
+            },
+            {
+                "id":"8",
+                "desc":"unlimited custom templates"
+            },
+            {
+                "id":"9",
+                "desc":"30 beautifully made templates"
+            },
+            {
+                "id":"10",
+                "desc":"16mb max file upload"
+            },
+            {
+                "id":"11",
+                "desc":"API and SDK help & support"
+            },
+            {
+                "id":"12",
+                "desc":"Faster delivery speed"
+            },
+            {
+                "id":"13",
+                "desc":"Top priority support"
+            }
+        ]
+    },
+    {
+        "id":"3",
+        "sups":"Professional",
+        "name":"Lets Talk",
+        "subs":"For businesses & builders that want to do more",
+        "list":[
+            {
+                "id":"1",
+                "desc":"Everything in creators plan"
+            },
+            {
+                "id":"2",
+                "desc":"unlimited contacts"
+            },
+            {
+                "id":"3",
+                "desc":"unlimited emails"
+            },
+            {
+                "id":"4",
+                "desc":"AI assistant for creating emails"
+            },
+            {
+                "id":"5",
+                "desc":"15 team members"
+            },
+            {
+                "id":"6",
+                "desc":"campaign result comparison"
+            },
+            {
+                "id":"7",
+                "desc":"advanced segmentation"
+            },
+            {
+                "id":"8",
+                "desc":"A/B testing"
+            },
+            {
+                "id":"9",
+                "desc":"export analytics"
+            },
+            {
+                "id":"10",
+                "desc":"unsubscribe reason insights"
+            },
+            {
+                "id":"11",
+                "desc":"scheduled reminders"
+            },
+            {
+                "id":"12",
+                "desc":"user management"
+            },
+            {
+                "id":"13",
+                "desc":"40mb max file upload"
+            },
+            {
+                "id":"14",
+                "desc":"API and SDk help & integration"
+            },
+            {
+                "id":"15",
+                "desc":"10 days email logs storage"
+            },
+            {
+                "id":"16",
+                "desc":"dedicated support"
+            }
+        ]
+    }
+]
