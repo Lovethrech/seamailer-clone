@@ -5,7 +5,19 @@ import HBottom from "@/components/HBottom.vue";
 import GrowthSection from "@/components/GrowthSection.vue";
 import MQ from "@/components/MQ.vue";
 import More from "@/components/More.vue";
+import Pricing from "@/components/Pricing.vue";
 </script>
+
+<style scoped>
+.pricing{
+    display:none;
+}
+@media screen and (max-width:875px) {
+    .pricing{
+        display:flex;
+    }
+}
+</style>
 
 <template>
     <div class="ctn">
@@ -15,5 +27,6 @@ import More from "@/components/More.vue";
         <GrowthSection></GrowthSection>
         <MQ></MQ>
         <More></More>
+        <Pricing class="pricing"></Pricing>
     </div>
 </template>
