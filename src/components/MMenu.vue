@@ -5,8 +5,8 @@ import navLists from "@/data/nav-list.json";
 
 const loginId = ref([navLists[0]]);
 const signUpId = ref([navLists[1]]);
-const loginBtnWidth = ref("300px");
-const signUpBtnWidth = ref("100px");
+const loginBtnWidth = ref("60vw");
+const signUpBtnWidth = ref("30vw");
 </script>
 <style scoped>
 .m-menu-ctn {
