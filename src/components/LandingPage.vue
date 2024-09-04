@@ -6,6 +6,7 @@ import GrowthSection from "@/components/GrowthSection.vue";
 import MQ from "@/components/MQ.vue";
 import More from "@/components/More.vue";
 import Pricing from "@/components/Pricing.vue";
+import PowerSign from "@/components/PowerSign.vue";
 </script>
 
 <style scoped>
@@ -28,5 +29,6 @@ import Pricing from "@/components/Pricing.vue";
         <MQ></MQ>
         <More></More>
         <Pricing class="pricing"></Pricing>
+        <PowerSign></PowerSign>
     </div>
 </template>
