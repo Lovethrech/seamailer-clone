@@ -9,7 +9,9 @@ const freeCardWidth=ref("80%");
 
 <template>
     <div class="main-ctn">
-        <div class="left-chevron-ctn"></div>
+        <div class="left-chevron-ctn">
+            <!-- <i class='bx bxs-chevron-left'></i> -->
+        </div>
         <div class="mini-ctn">
             <PCard 
                 :pricingInfo="freeId"
@@ -17,6 +19,8 @@ const freeCardWidth=ref("80%");
             >
             </PCard>
         </div>
-        <div class="right-chevron-ctn"></div>
+        <div class="right-chevron-ctn">
+            <i class='bx bxs-chevron-right' style='color:#000000' ></i>
+        </div>
     </div>
 </template>
