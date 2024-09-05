@@ -7,8 +7,11 @@ const freeId=ref([pricingInfos[0]]);
 const freeCardWidth=ref("90vw");
 const displayLeftIcon=ref("none");
 
-const togglePrice=()=>{
-    
+const togglePriceRight=()=>{
+    if (freeId.value==[pricingInfos[0]]){
+        freeId.value=[pricingInfos[1]];
+        displayLeftIcon.value="flex";
+    }
 }
 </script>
 
@@ -24,7 +27,7 @@ const togglePrice=()=>{
     justify-content: center;
     place-items:center;
     font-size:40px;
-    width:30px;
+    width:50px;
 }
 </style>
 
@@ -40,7 +43,7 @@ const togglePrice=()=>{
             >
             </PCard>
         </div>
-        <div class="right-chevron-ctn">
+        <div :onClick="togglePriceRight" class="right-chevron-ctn">
             <i class='bx bxs-chevron-right' style='color:#000000' ></i>
         </div>
     </div>
