@@ -9,9 +9,6 @@ import PCardCtn from "@/components/PCardCtn.vue";
     flex-direction: column;
     padding:6vh 0;
 }
-.p-mini-ctn{
-
-}
 .title{
     margin:0 6vw;
     text-align:center;
