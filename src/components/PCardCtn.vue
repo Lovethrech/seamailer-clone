@@ -6,7 +6,6 @@ import pricingInfos from "@/data/pricing-infos.json";
 const freeId=ref([pricingInfos[0]]);
 const creatorId=ref([pricingInfos[1]]);
 const professionalId=ref([pricingInfos[2]]);
-
 const freeCardWidth=ref("90vw");
 const displayLeftIcon=ref("none");
 
@@ -28,8 +27,10 @@ const togglePriceRight=()=>{
 .mini-ctn{
     display:flex;
     flex-direction:row;
+    width:3000px;
 }
 .left-chevron-ctn, .right-chevron-ctn{
+    position:absolute;
     display:flex;
     justify-content: center;
     place-items:center;
