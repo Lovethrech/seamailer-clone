@@ -8,6 +8,7 @@ import PCardCtn from "@/components/PCardCtn.vue";
     display:flex;
     flex-direction: column;
     padding:6vh 0;
+    width:100%;
 }
 .title{
     margin:0 6vw;
