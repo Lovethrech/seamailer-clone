@@ -4,14 +4,17 @@ import PCard from "@/components/PCard.vue";
 import pricingInfos from "@/data/pricing-infos.json";
 
 const freeId=ref([pricingInfos[0]]);
+const creatorId=ref([pricingInfos[1]]);
+const professionalId=ref([pricingInfos[2]]);
+
 const freeCardWidth=ref("90vw");
 const displayLeftIcon=ref("none");
 
 const togglePriceRight=()=>{
-    if (freeId.value==[pricingInfos[0]]){
-        freeId.value=[pricingInfos[1]];
-        displayLeftIcon.value="flex";
-    }
+    // if (freeId.value==[pricingInfos[0]]){
+    //     freeId.value=[pricingInfos[1]];
+    //     displayLeftIcon.value="flex";
+    // }
 }
 </script>
 
@@ -21,6 +24,10 @@ const togglePriceRight=()=>{
     flex-direction:row;
     justify-content: space-between;
     gap:10px;
+}
+.mini-ctn{
+    display:flex;
+    flex-direction:row;
 }
 .left-chevron-ctn, .right-chevron-ctn{
     display:flex;
@@ -39,6 +46,16 @@ const togglePriceRight=()=>{
         <div class="mini-ctn">
             <PCard 
                 :pricingInfo="freeId"
+                :cardWidth="freeCardWidth"
+            >
+            </PCard>
+            <PCard 
+                :pricingInfo="creatorId"
+                :cardWidth="freeCardWidth"
+            >
+            </PCard>
+            <PCard 
+                :pricingInfo="professionalId"
                 :cardWidth="freeCardWidth"
             >
             </PCard>
