@@ -3,12 +3,13 @@
     background-color:#edf2fb;
     padding:6vh 6vw;
     text-align:center;
+    color: #14213d;
 }
 .title{
     font-size:30px;
 }
 .title b{
-    color:
+    color: #f1914f;
 }
 </style>
 
