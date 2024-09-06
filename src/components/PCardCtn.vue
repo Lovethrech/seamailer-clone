@@ -6,6 +6,9 @@ import pricingInfos from "@/data/pricing-infos.json";
 const freeId=ref([pricingInfos[0]]);
 const creatorId=ref([pricingInfos[1]]);
 const professionalId=ref([pricingInfos[2]]);
+const freeDisplay=ref("flex");
+const creatorDisplay=ref("none");
+const professionalDisplay=ref("none");
 const freeCardWidth=ref("90vw");
 const displayLeftIcon=ref("none");
 
@@ -23,11 +26,12 @@ const togglePriceRight=()=>{
     flex-direction:row;
     justify-content: space-between;
     gap:10px;
+    width:3200px;
 }
 .mini-ctn{
     display:flex;
     flex-direction:row;
-    width:3000px;
+    
 }
 .left-chevron-ctn, .right-chevron-ctn{
     position:absolute;
@@ -47,22 +51,25 @@ const togglePriceRight=()=>{
         <div class="mini-ctn">
             <PCard 
                 :pricingInfo="freeId"
+                :cardDisplay="freeDisplay"
                 :cardWidth="freeCardWidth"
             >
             </PCard>
             <PCard 
                 :pricingInfo="creatorId"
+                :cardDisplay="creatorDisplay"
                 :cardWidth="freeCardWidth"
             >
             </PCard>
             <PCard 
                 :pricingInfo="professionalId"
+                :cardDisplay="professionalDisplay"
                 :cardWidth="freeCardWidth"
             >
             </PCard>
         </div>
-        <div :onClick="togglePriceRight" class="right-chevron-ctn">
+        <!-- <div :onClick="togglePriceRight" class="right-chevron-ctn">
             <i class='bx bxs-chevron-right' style='color:#000000' ></i>
-        </div>
+        </div> -->
     </div>
 </template>

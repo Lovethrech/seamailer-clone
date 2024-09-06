@@ -20,11 +20,11 @@ const textColor = ref("hsl(0, 0%, 0%");
     justify-content: center;
     padding:8vh 4vw;
 }
-h3{
+h2{
     color:#C7C7C7;
     font-family: "Roboto Condensed", system-ui;
     text-align:center;
-    font-size:36px;
+    font-size:38px;
 }
 .logo-name{
     color:#FCA311;
@@ -34,7 +34,7 @@ h3{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    gap:6vw;
+    gap:8vw;
     text-align:center;
 }
 .btn-text{
@@ -52,7 +52,7 @@ h3{
 <template>
     <div class="main-ctn">
         <div class="mini-ctn">
-            <h3>Why choose <b class="logo-name">Seamailer?</b></h3>
+            <h2>Why choose <b class="logo-name">Seamailer?</b></h2>
             <div class="rate">
                 <MQRate :qRate="typeId"></MQRate>
                 <MQRate :qRate="deliverId"></MQRate>

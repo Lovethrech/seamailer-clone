@@ -13,7 +13,7 @@ import MoreCard from "@/components/MoreCard.vue";
 }
 .title{
     color:#FCA311;
-    font-size:30px;
+    font-size:38px;
     font-family: "Open Sans", sans-serif;
 }
 .desc{
@@ -26,7 +26,9 @@ import MoreCard from "@/components/MoreCard.vue";
     <div class="main-ctn">
         <div class="mini-ctn">
             <h3 class="title">There is more for you</h3>
+            <br>
             <p class="desc">We are unlimited and so are you</p>
+            <br>
             <br>
             <MoreCard></MoreCard>
         </div>

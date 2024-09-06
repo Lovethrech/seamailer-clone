@@ -23,7 +23,7 @@ import mores from "@/data/mores.json";
 }
 .title{
     color:#FCA311;
-    font-size:20px;
+    font-size:22px;
     font-weight:600;
     font-family: "Open Sans", sans-serif;
 }
@@ -48,7 +48,7 @@ import mores from "@/data/mores.json";
 <template>
     <div class="main-ctn-mini">
         <div class="card" v-for="more in mores" :key="more.id">
-            <p class="title">{{more.title}}</p>
+            <h2 class="title">{{more.title}}</h2>
             <br>
             <p class="desc">{{more.desc}}</p>
         </div>

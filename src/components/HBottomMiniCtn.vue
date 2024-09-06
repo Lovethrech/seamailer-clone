@@ -80,7 +80,7 @@ if (windowWidth.value < 875) {
 .title{
     color: #14213d;
     margin-top:2vh;
-    font-size:20px;
+    font-size:22px;
     font-family: "Open Sans", sans-serif;
     font-weight:600;
 }

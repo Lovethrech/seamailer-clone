@@ -10,7 +10,7 @@ import HBottomMiniCtn from "@/components/HBottomMiniCtn.vue";
 h2{
     text-align:center;
     color: #14213d;
-    font-size:30px;
+    font-size:38px;
     font-family: "Open Sans", sans-serif;
     font-weight:600;
 }
@@ -20,7 +20,7 @@ h2{
     }
     h2{
         padding:4vw;
-        font-size:24px;
+        font-size:28px;
     }
 }
 </style>

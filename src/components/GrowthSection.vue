@@ -12,7 +12,7 @@ h2, p{
     line-height:1.5;
 }
 h2{
-    font-size:30px;
+    font-size:38px;
     font-family: "Open Sans", sans-serif;
     font-weight:600;
 }
@@ -36,7 +36,6 @@ p{
             <h2>
                 Made for your growth
             </h2>
-            <br>
             <p>
                 We have built and tailored Seamailer for your work to achieve more when talking to your customers
             </p>

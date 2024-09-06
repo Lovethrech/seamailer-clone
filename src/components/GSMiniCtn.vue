@@ -15,7 +15,7 @@ const btnWidth = ref("100%");
     display:flex;
     flex-direction:row;
     justify-content: center;
-    gap:2vw;
+    gap:4vw;
     margin:0vh 0;
     padding:4vh 4vw;
     border:3px outset rgba(0, 0, 0, 0.064);
@@ -48,7 +48,7 @@ const btnWidth = ref("100%");
 }
 .desc{
     color:#14213d;
-    width:400px;
+    width:20vw;
     line-height: 1.5;
     font-size:16px;
     font-family: "Roboto Condensed", system-ui;
@@ -59,6 +59,7 @@ const btnWidth = ref("100%");
 @media screen and (max-width:875px){
     .desc{
         font-size:14px;
+        width:100%;
     }
     .card:hover{
         transform:scale(1);

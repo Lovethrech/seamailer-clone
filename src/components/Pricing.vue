@@ -32,6 +32,7 @@ import PCardCtn from "@/components/PCardCtn.vue";
         <div class="p-mini-ctn">
             <h3 class="title">Pricing tailored to your usage</h3>
             <p class="desc">You only pay for what you use, no hidden charges.</p>
+            <br>
             <PCardCtn></PCardCtn>
         </div>
     </div>

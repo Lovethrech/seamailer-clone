@@ -6,18 +6,18 @@
 }
 h1{
     color:#14213d;
-    font-size:42px;
+    font-size:48px;
 }
 p{
     color:#f1914f;
-    font-size:16px;
+    font-size:18px;
 }
 @media screen and (max-width:875px) {
     h1{
-        font-size: 34px;
+        font-size: 38px;
     }
     p{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 </style>
