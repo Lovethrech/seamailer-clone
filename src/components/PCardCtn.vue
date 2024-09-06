@@ -68,8 +68,8 @@ const togglePriceRight=()=>{
             >
             </PCard>
         </div>
-        <!-- <div :onClick="togglePriceRight" class="right-chevron-ctn">
+        <div :onClick="togglePriceRight" class="right-chevron-ctn">
             <i class='bx bxs-chevron-right' style='color:#000000' ></i>
-        </div> -->
+        </div>
     </div>
 </template>
