@@ -1,3 +1,10 @@
+<style scoped>
+.main-ctn{
+    background-color:#edf2fb;
+    padding:6vh 6vw;
+}
+</style>
+
 <template>
     <div class="main-ctn">
         <div class="mini-ctn">
