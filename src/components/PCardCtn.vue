@@ -41,6 +41,9 @@ const togglePriceRight=()=>{
     font-size:40px;
     width:50px;
 }
+.right-chevron-ctn{
+    right:0;
+}
 </style>
 
 <template>
