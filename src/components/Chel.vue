@@ -6,6 +6,7 @@ p{
 p a{
     font-style:italic;
     color:rgb(236, 217, 181);
+    font-family: "Sevillana", cursive;
     font-weight:600;
 }
 </style>
