@@ -1,5 +1,6 @@
 <script setup>
 import Chel from "@/components/Chel.vue";
+import FooterNav from "@/components/FooterNav.vue";
 </script>
 
 <style scoped>
@@ -8,12 +9,17 @@ import Chel from "@/components/Chel.vue";
     color:#ffffff;
     padding:2vh 6vw;
 }
+.mini-ctn{
+    display:flex;
+    justify-content: space-between;
+}
 </style>
 
 <template>
     <div class="main-ctn">
         <div class="mini-ctn">
             <Chel></Chel>
+            <FooterNav></FooterNav>
         </div>
     </div>
 </template>

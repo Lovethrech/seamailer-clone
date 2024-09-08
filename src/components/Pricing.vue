@@ -35,10 +35,5 @@ import PCardCtn from "@/components/PCardCtn.vue";
             <br>
             <PCardCtn></PCardCtn>
         </div>
-
-        <!-- <i class='bx bxs-book' style='color:#ffffff' ></i> -->
-        <!-- <i class='bx bxl-youtube' style='color:#ffffff' ></i> -->
-        <!-- <i class='bx bxl-instagram' style='color:#ffffff' ></i> -->
-        <!-- <i class='bx bxl-twitter' style='color:#ffffff' ></i> -->
     </div>
 </template>
