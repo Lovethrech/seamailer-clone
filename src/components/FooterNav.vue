@@ -11,13 +11,14 @@
     margin:auto 0
 }
 .post-icon-ctn{
+    position: absolute;
     display:flex;
     flex-direction:row;
     gap:2vw;
-    background-color:#4f5052;
+    background-color:#14213d;
     color:rgb(255, 252, 252);
     padding: 4px 8px;
-    border:3px outset #525253a8;
+    border:3px inset #14213d54;
 }
 .pre-icon-ctn:active{
     transform: scale(0.5);
