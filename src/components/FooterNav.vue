@@ -25,7 +25,6 @@
 <template>
     <div class="main-icon-ctn">
         <div class="mini-icon-ctn">
-            <i class='bx bxs-book' ></i>
             <i class='bx bxl-youtube' ></i>
             <i class='bx bxl-instagram'></i>
             <i class='bx bxl-twitter'></i>
