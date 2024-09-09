@@ -7,37 +7,21 @@
     justify-content:space-between;
     gap:2vw;
 }
-.pre-icon-ctn{
-    margin:auto 0
-}
-.post-icon-ctn{
-    position: absolute;
-    display:flex;
-    flex-direction:row;
-    gap:2vw;
+.mini-icon-ctn i{
     background-color:#14213d;
-    color:rgb(255, 252, 252);
-    padding: 4px 8px;
-    border:3px inset #14213d54;
-}
-.pre-icon-ctn:active{
-    transform: scale(0.5);
-    transition: all 2s;
+    padding:10px;
+    border-radius:50%;
+    box-shadow: outset 0px 0px 20px 20px white;
 }
 </style>
 
 <template>
     <div class="main-icon-ctn">
         <div class="mini-icon-ctn">
-            <div class="pre-icon-ctn">
-                <i class='bx bxs-navigation' style='color:#ffffff' ></i>
-            </div>
-            <div class="post-icon-ctn">
-                <i class='bx bxs-book' ></i>
-                <i class='bx bxl-youtube' ></i>
-                <i class='bx bxl-instagram'></i>
-                <i class='bx bxl-twitter'></i>
-            </div>
+            <i class='bx bxs-book' ></i>
+            <i class='bx bxl-youtube' ></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-twitter'></i>
         </div>
     </div>
 </template>
