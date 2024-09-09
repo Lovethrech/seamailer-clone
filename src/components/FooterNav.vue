@@ -14,10 +14,10 @@
     display:flex;
     flex-direction:row;
     gap:2vw;
-    background-color:#edf2fb;
-    color:black;
+    background-color:#4f5052;
+    color:rgb(255, 252, 252);
     padding: 4px 8px;
-    border:3px outset #edf2fba8;
+    border:3px outset #525253a8;
 }
 .pre-icon-ctn:active{
     transform: scale(0.5);
