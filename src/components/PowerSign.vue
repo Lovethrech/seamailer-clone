@@ -15,13 +15,13 @@ const btnWidth = ref("100%");
     color: #14213d;
 }
 .title{
-    font-size:38px;
+    font-size:34px;
 }
 .title b{
     color: #f1914f;
 }
 .desc{
-    font-size:18px;
+    font-size:16px;
     font-family: "Roboto Condensed", system-ui;
 }
 .btn-ctn{
