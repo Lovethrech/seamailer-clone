@@ -8,10 +8,9 @@
     gap:2vw;
 }
 .mini-icon-ctn i{
-    background-color:#14213d;
     padding:10px;
     border-radius:50%;
-    box-shadow: outset 0px 0px 20px 20px white;
+    border: 2px dotted #14213d;
 }
 </style>
 

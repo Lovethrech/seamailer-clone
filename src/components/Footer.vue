@@ -7,7 +7,7 @@ import FooterNav from "@/components/FooterNav.vue";
 .main-ctn{
     background-color:#000000;
     color:#ffffff;
-    padding:2vh 6vw;
+    padding:1vh 6vw;
 }
 .mini-ctn{
     display:flex;

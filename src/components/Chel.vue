@@ -2,6 +2,7 @@
 p{
     font-family: "Roboto Condensed", system-ui;
     font-size:14px;
+    margin:auto 0;
 }
 p a{
     font-style:italic;
