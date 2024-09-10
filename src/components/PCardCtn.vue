@@ -11,6 +11,7 @@ const creatorDisplay=ref("none");
 const professionalDisplay=ref("none");
 const freeCardWidth=ref("90vw");
 const displayLeftIcon=ref("none");
+const displayRightIcon=ref("none");
 
 const togglePriceRight=()=>{
     if (freeDisplay.value==="flex"){
@@ -19,13 +20,25 @@ const togglePriceRight=()=>{
         professionalDisplay.value="none";
         displayLeftIcon.value="flex";
     }
+    else if (creatorDisplay.value==="flex"){
+        freeDisplay.value="none";
+        creatorDisplay.value="none";
+        professionalDisplay.value="flex";
+        displayLeftIcon.value="flex";
+    }
+    else{
+        freeDisplay.value="flex";
+        creatorDisplay.value="none";
+        professionalDisplay.value="none";
+        displayLeftIcon.value="none";
+    }
 }
 const togglePriceLeft=()=>{
     if (creatorDisplay.value==="flex"){
         freeDisplay.value="flex";
         creatorDisplay.value="none";
         professionalDisplay.value="none";
-        displayLeftIcon.value="flex";
+        displayLeftIcon.value="none";
     }
 }
 </script>
@@ -48,16 +61,17 @@ const togglePriceLeft=()=>{
     display:flex;
     justify-content: center;
     place-items:center;
+    background-color: rgba(0, 0, 0, 0.397);
     font-size:40px;
     width:50px;
 }
 .left-chevron-ctn{
     left:0;
-    margin-top:300px;
+    margin-top:50vw;
 }
 .right-chevron-ctn{
     right:0;
-    margin-top:300px;
+    margin-top:50vw;
 }
 </style>
 
@@ -88,7 +102,7 @@ const togglePriceLeft=()=>{
                 </PCard>
             </div>
             <div :onClick="togglePriceRight" class="right-chevron-ctn">
-                <i class='bx bxs-chevron-right' style='color:#000000' ></i>
+                <i class='bx bxs-chevron-right'  :style="{display:displayRightIcon}"></i>
             </div>
         </div>
     </div>

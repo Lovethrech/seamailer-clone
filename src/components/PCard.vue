@@ -5,7 +5,7 @@ const {pricingInfo, cardWidth, cardDisplay}=defineProps(['pricingInfo', 'cardWid
 <style scoped>
 .card-main-ctn{
     background-color: rgba(160, 155, 155, 0.219);
-    padding:9vh 6vw 0;
+    padding:9vh 6vw 4vh;
     margin:0 4vw;
     border:10px outset rgba(0, 0, 0, 0.034);
     border-radius:60px 0;
