@@ -85,10 +85,12 @@ const togglePriceLeft=()=>{
 .left-chevron-ctn{
     left:0;
     margin-top:50vw;
+    border-radius: 0 20px 20px 0;
 }
 .right-chevron-ctn{
     right:0;
     margin-top:50vw;
+    border-radius:20px 0 0 20px;
 }
 </style>
 
