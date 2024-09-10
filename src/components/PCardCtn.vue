@@ -41,7 +41,10 @@ const togglePriceRight=()=>{
     font-size:40px;
     width:50px;
 }
-
+.left-chevron-ctn{
+    left:0;
+    margin-top:200px;
+}
 .right-chevron-ctn{
     right:0;
     margin-top:200px;
