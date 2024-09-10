@@ -41,38 +41,42 @@ const togglePriceRight=()=>{
     font-size:40px;
     width:50px;
 }
+
 .right-chevron-ctn{
     right:0;
+    margin-top:200px;
 }
 </style>
 
 <template>
-    <div class="main-ctn">
-        <div class="left-chevron-ctn" >
-            <i class='bx bxs-chevron-left' :style="{display:displayLeftIcon}"></i>
-        </div>
-        <div class="mini-ctn">
-            <PCard 
-                :pricingInfo="freeId"
-                :cardDisplay="freeDisplay"
-                :cardWidth="freeCardWidth"
-            >
-            </PCard>
-            <PCard 
-                :pricingInfo="creatorId"
-                :cardDisplay="creatorDisplay"
-                :cardWidth="freeCardWidth"
-            >
-            </PCard>
-            <PCard 
-                :pricingInfo="professionalId"
-                :cardDisplay="professionalDisplay"
-                :cardWidth="freeCardWidth"
-            >
-            </PCard>
-        </div>
-        <div :onClick="togglePriceRight" class="right-chevron-ctn">
-            <i class='bx bxs-chevron-right' style='color:#000000' ></i>
+    <div>
+        <div class="main-ctn">
+            <div class="left-chevron-ctn" >
+                <i class='bx bxs-chevron-left' :style="{display:displayLeftIcon}"></i>
+            </div>
+            <div class="mini-ctn">
+                <PCard 
+                    :pricingInfo="freeId"
+                    :cardDisplay="freeDisplay"
+                    :cardWidth="freeCardWidth"
+                >
+                </PCard>
+                <PCard 
+                    :pricingInfo="creatorId"
+                    :cardDisplay="creatorDisplay"
+                    :cardWidth="freeCardWidth"
+                >
+                </PCard>
+                <PCard 
+                    :pricingInfo="professionalId"
+                    :cardDisplay="professionalDisplay"
+                    :cardWidth="freeCardWidth"
+                >
+                </PCard>
+            </div>
+            <div :onClick="togglePriceRight" class="right-chevron-ctn">
+                <i class='bx bxs-chevron-right' style='color:#000000' ></i>
+            </div>
         </div>
     </div>
 </template>
