@@ -84,7 +84,7 @@ const togglePriceLeft=()=>{
 }
 .left-chevron-ctn{
     left:0;
-    margin-top:50vw;
+    margin-top:200px;
     border-radius: 0 20px 20px 0;
 }
 .right-chevron-ctn{
