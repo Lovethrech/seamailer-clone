@@ -13,10 +13,20 @@ const freeCardWidth=ref("90vw");
 const displayLeftIcon=ref("none");
 
 const togglePriceRight=()=>{
-    // if (freeId.value==[pricingInfos[0]]){
-    //     freeId.value=[pricingInfos[1]];
-    //     displayLeftIcon.value="flex";
-    // }
+    if (freeDisplay.value==="flex"){
+        freeDisplay.value="none";
+        creatorDisplay.value="flex";
+        professionalDisplay.value="none";
+        displayLeftIcon.value="flex";
+    }
+}
+const togglePriceLeft=()=>{
+    if (creatorDisplay.value==="flex"){
+        freeDisplay.value="flex";
+        creatorDisplay.value="none";
+        professionalDisplay.value="none";
+        displayLeftIcon.value="flex";
+    }
 }
 </script>
 
@@ -43,18 +53,18 @@ const togglePriceRight=()=>{
 }
 .left-chevron-ctn{
     left:0;
-    margin-top:200px;
+    margin-top:300px;
 }
 .right-chevron-ctn{
     right:0;
-    margin-top:200px;
+    margin-top:300px;
 }
 </style>
 
 <template>
     <div>
         <div class="main-ctn">
-            <div class="left-chevron-ctn" >
+            <div :onClick="togglePriceLeft" class="left-chevron-ctn" >
                 <i class='bx bxs-chevron-left' :style="{display:displayLeftIcon}"></i>
             </div>
             <div class="mini-ctn">
