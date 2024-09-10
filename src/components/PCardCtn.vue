@@ -11,7 +11,7 @@ const creatorDisplay=ref("none");
 const professionalDisplay=ref("none");
 const freeCardWidth=ref("90vw");
 const displayLeftIcon=ref("none");
-const displayRightIcon=ref("none");
+const displayRightIcon=ref("flex");
 
 const togglePriceRight=()=>{
     if (freeDisplay.value==="flex"){
@@ -19,18 +19,21 @@ const togglePriceRight=()=>{
         creatorDisplay.value="flex";
         professionalDisplay.value="none";
         displayLeftIcon.value="flex";
+        displayRightIcon.value="flex";
     }
     else if (creatorDisplay.value==="flex"){
         freeDisplay.value="none";
         creatorDisplay.value="none";
         professionalDisplay.value="flex";
         displayLeftIcon.value="flex";
+        displayRightIcon.value="none";
     }
     else{
         freeDisplay.value="flex";
         creatorDisplay.value="none";
         professionalDisplay.value="none";
         displayLeftIcon.value="none";
+        displayRightIcon.value="flex";
     }
 }
 const togglePriceLeft=()=>{
@@ -39,6 +42,20 @@ const togglePriceLeft=()=>{
         creatorDisplay.value="none";
         professionalDisplay.value="none";
         displayLeftIcon.value="none";
+    }
+    else if (professionalDisplay.value==="flex"){
+        freeDisplay.value="none";
+        creatorDisplay.value="flex";
+        professionalDisplay.value="none";
+        displayLeftIcon.value="flex";
+        displayRightIcon.value="flex";
+    }
+    else{
+        freeDisplay.value="flex";
+        creatorDisplay.value="none";
+        professionalDisplay.value="none";
+        displayLeftIcon.value="none";
+        displayRightIcon.value="flex";
     }
 }
 </script>
