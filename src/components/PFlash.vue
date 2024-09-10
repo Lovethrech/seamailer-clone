@@ -9,7 +9,7 @@
     display:flex;
     justify-content: center;
     gap:10px;
-    font-size:12px;
+    font-size:10px;
     background-color:rgba(0, 128, 0, 0.13);
     color:green;
     padding:5px 10px;
