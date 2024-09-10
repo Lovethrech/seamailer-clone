@@ -36,26 +36,28 @@ const btnWidth = ref("100%");
 </style>
 
 <template>
-    <div class="main-ctn">
-        <div class="mini-ctn">
-            <h2 class="title">
-                Power your apps and users <br/> with <b>transactional</b> emails
-            </h2>
-            <br>
-            <p class="desc">
-                Boost your mobile &amp; web apps with our transactional emails. 
-                Get your notification updates emails to your users 100% of the time.
-            </p>
-            <br/>
-            <br/>
-            <div class="btn-ctn">
-                <BlueBtn 
-                    :btnData="signUpId"
-                    :btnWidth="btnWidth"
-                >
-                </BlueBtn>
+    <div>
+        <div class="main-ctn">
+            <div class="mini-ctn">
+                <h2 class="title">
+                    Power your apps and users <br/> with <b>transactional</b> emails
+                </h2>
+                <br>
+                <p class="desc">
+                    Boost your mobile &amp; web apps with our transactional emails. 
+                    Get your notification updates emails to your users 100% of the time.
+                </p>
+                <br/>
+                <br/>
+                <div class="btn-ctn">
+                    <BlueBtn 
+                        :btnData="signUpId"
+                        :btnWidth="btnWidth"
+                    >
+                    </BlueBtn>
+                </div>
+                
             </div>
-            
         </div>
     </div>
 </template>
